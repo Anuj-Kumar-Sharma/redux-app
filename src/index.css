@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+@import "tailwindcss";
+
+body {
+    @apply font-body bg-black text-white;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+@theme {
+  --font-body: "Capriola", sans-serif;
+}
+
+.link-button {
+  @apply text-yellow-400 hover:text-yellow-300 active:text-yellow-500 text-lg;
+}
