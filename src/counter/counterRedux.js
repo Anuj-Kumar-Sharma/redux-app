@@ -9,6 +9,13 @@ export const COUNTER_ACTION_TYPES = {
     DECREMENT: "DECREMENT",
 };
 
+export function incrementAction(payload) {
+  return {
+    type: COUNTER_ACTION_TYPES.INCREMENT,
+    payload
+  }
+}
+
 function counterReducer(state = initialState, action) {
     switch (action.type) {
         case COUNTER_ACTION_TYPES.INCREMENT:
@@ -22,9 +29,4 @@ function counterReducer(state = initialState, action) {
     }
 }
 
-const store = configureStore({
-    reducer: { counter: counterReducer },
-    devTools: true
-});
-
-export default store;
+export default counterReducer;

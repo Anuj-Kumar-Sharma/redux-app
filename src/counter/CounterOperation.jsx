@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { COUNTER_ACTION_TYPES } from "./counterRedux";
+import { COUNTER_ACTION_TYPES, incrementAction } from "./counterRedux";
 
 const CounterOperation = () => {
     const dispatch = useDispatch();
@@ -19,7 +19,7 @@ const CounterOperation = () => {
             </button>
             <button
                 onClick={() =>
-                    dispatch({ type: COUNTER_ACTION_TYPES.INCREMENT })
+                    dispatch(incrementAction())
                 }
                 className="bg-yellow-300 px-4 py-2 rounded-sm cursor-pointer transition active:bg-yellow-500 hover:bg-yellow-200 "
             >
