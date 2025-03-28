@@ -8,7 +8,7 @@ const CartItem = ({
   title,
   price,
   quantity,
-  image
+  thumbnail
 }) => {
 
   const dispatch = useDispatch();
@@ -20,7 +20,7 @@ const CartItem = ({
         className="h-20 w-20 rounded-xl overflow-hidden shrink-0"
       >
         <img
-          src={image}
+          src={thumbnail}
           alt={title}
           className="w-full h-full object-cover rounded-xl"
         />
