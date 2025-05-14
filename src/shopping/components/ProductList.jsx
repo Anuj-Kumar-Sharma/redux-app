@@ -6,19 +6,12 @@ import { Loader2 } from "lucide-react";
 
 const ProductList = () => {
     const products = useSelector((state) => state.products.items);
-    const status = useSelector((state) => state.products.status);
+    // const status = useSelector((state) => state.products.status);
     const dispatch = useDispatch();
 
     useEffect(() => {
         dispatch(fetchProducts());
     }, []);
-
-    // if (status == "idle" || status == "loading")
-    //     return (
-    //         <div className="min-h-screen flex items-center justify-center">
-    //             <Loader2 size={40} className="animate-spin" />
-    //         </div>
-    //     );
 
     return (
         <div className="flex flex-wrap gap-8 justify-around">

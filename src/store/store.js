@@ -9,7 +9,7 @@ import persistStore from "redux-persist/es/persistStore";
 const persistConfig = {
   key: "root",
   storage: localStorage,
-  blacklist: ["counter"]
+  blacklist: ["products"]
 };
 
 const rootReducer = combineReducers({
