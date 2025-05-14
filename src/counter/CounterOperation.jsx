@@ -21,7 +21,7 @@ const CounterOperation = () => {
                 onClick={() =>
                     dispatch(incrementAction())
                 }
-                className="bg-yellow-300 px-4 py-2 rounded-sm cursor-pointer transition active:bg-yellow-500 hover:bg-yellow-200 "
+                className="bg-teal-300 px-4 py-2 rounded-sm cursor-pointer transition active:bg-yellow-500 hover:bg-yellow-200 "
             >
                 +
             </button>
